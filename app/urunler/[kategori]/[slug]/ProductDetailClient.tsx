@@ -31,6 +31,19 @@ export function ProductDetailClient() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-8"
+        >
+          <div className="flex items-center space-x-2 text-sm text-gray-600 mb-4">
+            <Link href="/" className="hover:text-blue-600">Anasayfa</Link>
+            <span>/</span>
+            <Link href="/urunler" className="hover:text-blue-600">Ürünler</Link>
+            <span>/</span>
+            <Link href={`/urunler/${params.kategori}`} className="hover:text-blue-600">
+              {params.kategori}
+            </Link>
+            <span>/</span>
+            <span className="text-gray-900 font-medium">{params.slug}</span>
           </div>
 
           <Button asChild variant="outline" size="sm" className="mb-6">
@@ -39,63 +52,63 @@ export function ProductDetailClient() {
               Geri Dön
             </Link>
           </Button>
+        </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl">Ürün Detayı</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="relative h-64 mb-4">
-                    <Image
-                      src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400"
-                      alt="Product"
-                      fill
-                      className="object-cover rounded-lg"
-                    />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Ürün Detayı</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="relative h-64 mb-4">
+                  <Image
+                    src="https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="Product"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+                <h1 className="text-3xl font-bold mb-2">{params.slug}</h1>
+                <Badge className="mb-4">DIN 8555: MF 10-GF-60-G</Badge>
+                <p className="text-gray-600">
+                  Detaylı ürün açıklaması burada yer alacak.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Teknik Özellikler</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="flex justify-between">
+                    <span>Sertlik:</span>
+                    <span className="font-medium">58-62 HRC</span>
                   </div>
-                  <h1 className="text-3xl font-bold mb-2">{params.slug}</h1>
-                  <Badge className="mb-4">DIN 8555: MF 10-GF-60-G</Badge>
-                  <p className="text-gray-600">
-                    Detaylı ürün açıklaması burada yer alacak.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Teknik Özellikler</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex justify-between">
-                      <span>Sertlik:</span>
-                      <span className="font-medium">58-62 HRC</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>Çap:</span>
-                      <span className="font-medium">1.6mm, 2.4mm</span>
-                    </div>
+                  <div className="flex justify-between">
+                    <span>Çap:</span>
+                    <span className="font-medium">1.6mm, 2.4mm</span>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </CardContent>
+            </Card>
 
-              <div className="space-y-2">
-                <Button className="w-full">
-                  <Download className="h-4 w-4 mr-2" />
-                  Teknik Döküman İndir
-                </Button>
-                <Button variant="outline" className="w-full">
-                  <FileText className="h-4 w-4 mr-2" />
-                  Teklif Al
-                </Button>
-              </div>
+            <div className="space-y-2">
+              <Button className="w-full">
+                <Download className="h-4 w-4 mr-2" />
+                Teknik Döküman İndir
+              </Button>
+              <Button variant="outline" className="w-full">
+                <FileText className="h-4 w-4 mr-2" />
+                Teklif Al
+              </Button>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
