@@ -1,0 +1,42 @@
+{
+  "navigation": {
+    "home": "Anasayfa",
+    "products": "Ürünler",
+    "plates": "Aşınma Plakaları",
+    "electrodes": "Tubular Elektrotlar",
+    "services": "Hizmetler",
+    "consulting": "Danışmanlık",
+    "welding": "Kaynak Hizmetleri",
+    "academy": "Akademi",
+    "sectors": "Sektörler",
+    "certificates": "Sertifikalar",
+    "downloads": "İndirme Merkezi",
+    "news": "Haberler",
+    "dealers": "Nereden Alınır",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "career": "Kariyer"
+  },
+  "hero": {
+    "title": "Aşınmaya Dayanıklı Kaynak Çözümleri",
+    "subtitle": "Türkiye'de, Size Yakın",
+    "description": "Toz dolgulu tel (FCAW) ve hardfacing plakalarıyla ekipman ömrünü katlayın.",
+    "getQuote": "Teklif Al",
+    "expertConsult": "Uzmanla Görüş"
+  },
+  "independence": {
+    "short": "Bu web sitesi ve Türkiye'de faaliyet gösteren NanoWearTech Türkiye, İran'daki namadnanotech.com kurumsal yapısıyla bağlantılı değildir.",
+    "full": "Bu web sitesi ve Türkiye'de faaliyet gösteren NanoWearTech Türkiye (nihai ticari unvan eklenecek) İran'daki namadnanotech.com kurumsal yapısı ile bağlantılı değildir. Türkiye operasyonu; tedarik, satış, servis ve garanti süreçlerinde tamamen bağımsızdır."
+  },
+  "actions": {
+    "call": "Ara",
+    "whatsapp": "WhatsApp",
+    "quote": "Teklif",
+    "menu": "Menü",
+    "download": "İndir",
+    "compare": "Karşılaştır",
+    "viewAll": "Tümünü Gör"
+  },
+  "welcome": "Hoş geldiniz",
+  "hello": "Merhaba"
+}
