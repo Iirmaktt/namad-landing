@@ -11,7 +11,7 @@ import { Search, Filter, Download, Eye, Scale } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function CategoryPageClient() {
+export function CategoryPageClient() {
   const params = useParams();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedProducts, setSelectedProducts] = useState<string[]>([]);
