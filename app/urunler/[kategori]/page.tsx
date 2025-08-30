@@ -11,6 +11,17 @@ import { Search, Filter, Download, Eye, Scale } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+export async function generateStaticParams() {
+  return [
+    { kategori: 'asinma' },
+    { kategori: 'takim-celigi' },
+    { kategori: 'korozyon' },
+    { kategori: 'cast' },
+    { kategori: 'buildup' },
+    { kategori: 'tungsten-carbide' }
+  ];
+}
+
 export default function CategoryPage() {
   const params = useParams();
   const [searchTerm, setSearchTerm] = useState('');

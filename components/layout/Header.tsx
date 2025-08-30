@@ -9,6 +9,7 @@ import { Menu, Phone, MessageCircle, FileText, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { IndependenceRibbon } from '@/components/layout/IndependenceRibbon';
 import { LanguageSwitcher } from '@/components/layout/LanguageSwitcher';
+import { Route } from 'next';
 
 export function Header() {
   const t = useTranslations();
@@ -16,17 +17,17 @@ export function Header() {
   const [showRibbon, setShowRibbon] = useState(true);
 
   const navigationItems = [
-    { href: '/urunler', label: t('navigation.products') },
-    { href: '/plakalar', label: t('navigation.plates') },
-    { href: '/elektrotlar', label: t('navigation.electrodes') },
-    { href: '/hizmetler', label: t('navigation.services') },
-    { href: '/sektorler', label: t('navigation.sectors') },
-    { href: '/sertifikalar', label: t('navigation.certificates') },
-    { href: '/indir', label: t('navigation.downloads') },
-    { href: '/haberler', label: t('navigation.news') },
-    { href: '/nereden-alinir', label: t('navigation.dealers') },
-    { href: '/hakkimizda', label: t('navigation.about') },
-    { href: '/iletisim', label: t('navigation.contact') },
+    { href: '/urunler' as Route, label: t('navigation.products') },
+    { href: '/plakalar' as Route, label: t('navigation.plates') },
+    { href: '/elektrotlar' as Route, label: t('navigation.electrodes') },
+    { href: '/hizmetler' as Route, label: t('navigation.services') },
+    { href: '/sektorler' as Route, label: t('navigation.sectors') },
+    { href: '/sertifikalar' as Route, label: t('navigation.certificates') },
+    { href: '/indir' as Route, label: t('navigation.downloads') },
+    { href: '/haberler' as Route, label: t('navigation.news') },
+    { href: '/nereden-alinir' as Route, label: t('navigation.dealers') },
+    { href: '/hakkimizda' as Route, label: t('navigation.about') },
+    { href: '/iletisim' as Route, label: t('navigation.contact') },
   ];
 
   return (
