@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useParams } from 'next/navigation';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -11,8 +10,11 @@ import { Search, Filter, Download, Eye, Scale } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export function CategoryPageClient() {
-  const params = useParams();
+interface CategoryPageClientProps {
+  kategori: string;
+}
+
+export default function CategoryPageClient({ kategori }: CategoryPageClientProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedProducts, setSelectedProducts] = useState<string[]>([]);
 
@@ -195,7 +197,7 @@ export function CategoryPageClient() {
 
                   <div className="flex space-x-2 pt-2">
                     <Button asChild size="sm" className="flex-1">
-                      <Link href={`/urunler/${params.kategori}/${product.slug}`}>
+                      <Link href={`/urunler/${kategori}/${product.slug}`}>
                         <Eye className="h-4 w-4 mr-1" />
                         İncele
                       </Link>

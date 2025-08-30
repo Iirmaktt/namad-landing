@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useParams } from 'next/navigation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -12,8 +11,12 @@ import { Download, FileText, Scale, Share2, AlertTriangle, ArrowLeft } from 'luc
 import Link from 'next/link';
 import Image from 'next/image';
 
-export function ProductDetailClient() {
-  const params = useParams();
+interface ProductDetailClientProps {
+  kategori: string;
+  slug: string;
+}
+
+export default function ProductDetailClient({ kategori, slug }: ProductDetailClientProps) {
   
   // Mock product data
   const product = {
@@ -39,15 +42,15 @@ export function ProductDetailClient() {
             <span>/</span>
             <Link href="/urunler" className="hover:text-blue-600">Ürünler</Link>
             <span>/</span>
-            <Link href={`/urunler/${params.kategori}`} className="hover:text-blue-600">
-              {params.kategori}
+            <Link href={`/urunler/${kategori}`} className="hover:text-blue-600">
+              {kategori}
             </Link>
             <span>/</span>
-            <span className="text-gray-900 font-medium">{params.slug}</span>
+            <span className="text-gray-900 font-medium">{slug}</span>
           </div>
 
           <Button asChild variant="outline" size="sm" className="mb-6">
-            <Link href={`/urunler/${params.kategori}`}>
+            <Link href={`/urunler/${kategori}`}>
               <ArrowLeft className="h-4 w-4 mr-2" />
               Geri Dön
             </Link>
@@ -69,7 +72,7 @@ export function ProductDetailClient() {
                     className="object-cover rounded-lg"
                   />
                 </div>
-                <h1 className="text-3xl font-bold mb-2">{params.slug}</h1>
+                <h1 className="text-3xl font-bold mb-2">{slug}</h1>
                 <Badge className="mb-4">DIN 8555: MF 10-GF-60-G</Badge>
                 <p className="text-gray-600">
                   Detaylı ürün açıklaması burada yer alacak.
