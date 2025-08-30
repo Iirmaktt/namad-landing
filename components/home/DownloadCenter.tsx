@@ -61,7 +61,7 @@ export function DownloadCenter() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            İndirme Merkezi
+            {t('navigation.downloads')}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Teknik kılavuzlar, parametre tabloları ve uygulama rehberlerine tek noktadan erişim
@@ -112,7 +112,7 @@ export function DownloadCenter() {
           className="text-center mt-12"
         >
           <Button asChild size="lg" className="group">
-            <Link href="/indir">
+            <Link href="#downloads">
               İndirme Merkezine Git
               <Download className="h-4 w-4 ml-2 group-hover:translate-y-1 transition-transform" />
             </Link>

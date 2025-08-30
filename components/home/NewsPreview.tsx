@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import { Calendar, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Route } from 'next';
 
 export function NewsPreview() {
   const t = useTranslations();
@@ -20,7 +21,7 @@ export function NewsPreview() {
       image: 'https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400',
       date: '15 Aralık 2024',
       category: 'Ürün Lansmanı',
-      href: '/haberler/yeni-tungsten-carbide-serisi'
+      href: '/haberler/yeni-tungsten-carbide-serisi' as Route
     },
     {
       title: 'Çimento Sektörü İçin Özel Çözümler',
@@ -28,7 +29,7 @@ export function NewsPreview() {
       image: 'https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=400',
       date: '8 Aralık 2024',
       category: 'Sektör Haberi',
-      href: '/haberler/cimento-sektoru-cozumleri'
+      href: '/haberler/cimento-sektoru-cozumleri' as Route
     },
     {
       title: 'FCAW Akademi Ücretsiz Eğitim Programı',
@@ -36,7 +37,7 @@ export function NewsPreview() {
       image: 'https://images.pexels.com/photos/5691660/pexels-photo-5691660.jpeg?auto=compress&cs=tinysrgb&w=400',
       date: '1 Aralık 2024',
       category: 'Eğitim',
-      href: '/haberler/fcaw-akademi-egitim-programi'
+      href: '/haberler/fcaw-akademi-egitim-programi' as Route
     }
   ];
 
@@ -115,7 +116,7 @@ export function NewsPreview() {
           className="text-center mt-12"
         >
           <Button asChild size="lg" variant="outline" className="group">
-            <Link href="/haberler">
+            <Link href={"/haberler" as Route}>
               Tüm Haberleri Görüntüle
               <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>

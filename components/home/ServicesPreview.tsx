@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { Users, Wrench, GraduationCap, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { Route } from 'next';
 
 export function ServicesPreview() {
   const t = useTranslations();
@@ -16,19 +17,19 @@ export function ServicesPreview() {
       icon: Users,
       title: 'Teknik Danışmanlık',
       description: 'Malzeme seçimi, kaynak parametreleri ve uygulama optimizasyonu',
-      href: '/hizmetler/danismanlik'
+      href: '/hizmetler/danismanlik' as Route
     },
     {
       icon: Wrench,
       title: 'Kaynak Hizmetleri',
       description: 'Saha uygulamaları ve özel proje çözümleri',
-      href: '/hizmetler/kaynak'
+      href: '/hizmetler/kaynak' as Route
     },
     {
       icon: GraduationCap,
       title: 'FCAW Akademi',
       description: 'Ücretsiz toz dolgulu tel kaynak eğitimi programı',
-      href: '/hizmetler/akademi'
+      href: '/hizmetler/akademi' as Route
     }
   ];
 

@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Shield, Wrench } from 'lucide-react';
 import Link from 'next/link';
+import { Route } from 'next';
 
 export function ProductShowcase() {
   const t = useTranslations();
@@ -16,21 +17,21 @@ export function ProductShowcase() {
       icon: Zap,
       title: 'Cored Wire (FCAW)',
       description: 'NAWEL Abrasion, Tool, Corrosion, Cast, Buildup ve Tungsten Carbide serisi',
-      href: '/urunler',
+      href: '/urunler' as Route,
       gradient: 'from-blue-500 to-blue-600'
     },
     {
       icon: Shield,
       title: 'Aşınma Plakaları',
       description: 'Ultrahard ve Ultralight serisi hardfacing plakaları',
-      href: '/plakalar',
+      href: '/plakalar' as Route,
       gradient: 'from-green-500 to-green-600'
     },
     {
       icon: Wrench,
       title: 'Tubular Elektrotlar',
       description: 'Elle kaynak için özel formülasyonlu toz dolgulu elektrotlar',
-      href: '/elektrotlar',
+      href: '/elektrotlar' as Route,
       gradient: 'from-orange-500 to-orange-600'
     }
   ];
