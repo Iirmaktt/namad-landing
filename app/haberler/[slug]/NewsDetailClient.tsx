@@ -16,6 +16,149 @@ interface NewsDetailClientProps {
 export default function NewsDetailClient({ slug }: NewsDetailClientProps) {
   
   const newsData: Record<string, any> = {
+    'egitim-yatirim-gerekliligi': {
+      title: 'Neden Eğitim İçin Mali Harcama Yapmalıyız?',
+      excerpt: 'Kaynak teknolojilerinde eğitim yatırımının uzun vadeli getirisi ve işletmelere sağladığı avantajlar.',
+      image: 'https://images.pexels.com/photos/5691660/pexels-photo-5691660.jpeg?auto=compress&cs=tinysrgb&w=800',
+      date: '20 Aralık 2024',
+      author: 'Eğitim Koordinatörü',
+      category: 'Eğitim',
+      readTime: '5 dk',
+      content: `
+        <p>Kaynak teknolojilerinde eğitim yatırımı, işletmelerin uzun vadeli başarısı için kritik öneme sahiptir. Bu makalede, eğitim harcamalarının neden gerekli olduğunu ve işletmelere sağladığı faydaları inceliyoruz.</p>
+
+        <h3>Eğitim Yatırımının Faydaları</h3>
+        <p>Kaynak teknolojilerinde yapılan eğitim yatırımları, işletmelere çok boyutlu avantajlar sağlar:</p>
+        
+        <ul>
+          <li><strong>Kalite Artışı:</strong> Eğitimli personel daha kaliteli kaynak işleri gerçekleştirir</li>
+          <li><strong>Verimlilik:</strong> Doğru tekniklerle çalışma hızı ve verimliliği artar</li>
+          <li><strong>Maliyet Tasarrufu:</strong> Hata oranları azalır, yeniden işleme maliyetleri düşer</li>
+          <li><strong>Güvenlik:</strong> İş kazası riskleri minimize edilir</li>
+        </ul>
+
+        <h3>Yatırım Geri Dönüşü</h3>
+        <p>Eğitim yatırımlarının geri dönüş süresi genellikle 6-12 ay arasındadır:</p>
+        
+        <ul>
+          <li>%30 daha az malzeme israfı</li>
+          <li>%40 daha az yeniden işleme</li>
+          <li>%25 daha hızlı üretim</li>
+          <li>%50 daha az iş kazası</li>
+        </ul>
+
+        <h3>NAMAD Akademi Avantajı</h3>
+        <p>NAMAD Akademi'nin ücretsiz eğitim programları ile:</p>
+        
+        <ul>
+          <li>Sıfır eğitim maliyeti</li>
+          <li>Sertifikalı eğitim</li>
+          <li>Uzman eğitmenler</li>
+          <li>Uygulamalı workshop</li>
+        </ul>
+
+        <p>Eğitim yatırımı yapmak, işletmenizin geleceğine yaptığınız en değerli yatırımdır. NAMAD Akademi ile bu yatırımı ücretsiz olarak gerçekleştirebilirsiniz.</p>
+      `
+    },
+    'kariyer-gelistim-projeleri': {
+      title: 'İş ve Kariyer Gelişimi İçin Yeni Projeler',
+      excerpt: 'Kaynak sektöründe kariyer gelişimi ve iş fırsatları için yenilikçi projeler ve eğitim programları.',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
+      date: '18 Aralık 2024',
+      author: 'İnsan Kaynakları',
+      category: 'Kariyer',
+      readTime: '4 dk',
+      content: `
+        <p>NanoWearTech Türkiye olarak, çalışanlarımızın ve sektör profesyonellerinin kariyer gelişimi için yeni projeler başlatıyoruz. Bu projeler, kaynak teknolojileri alanında uzmanlaşmak isteyen herkese açık.</p>
+
+        <h3>Kariyer Gelişim Programları</h3>
+        <p>Sektörde kariyer yapmak isteyenler için kapsamlı programlar:</p>
+        
+        <ul>
+          <li><strong>Stajyer Programı:</strong> Üniversite öğrencileri için 6 aylık staj imkanı</li>
+          <li><strong>Uzman Yetiştirme:</strong> Deneyimli teknisyenler için ileri seviye eğitim</li>
+          <li><strong>Liderlik Geliştirme:</strong> Yönetici adayları için liderlik eğitimleri</li>
+          <li><strong>Teknik Sertifikasyon:</strong> Uluslararası sertifika programları</li>
+        </ul>
+
+        <h3>İş Fırsatları</h3>
+        <p>Büyüyen ekibimize katılmak için açık pozisyonlar:</p>
+        
+        <ul>
+          <li>Kaynak Teknolojileri Uzmanı</li>
+          <li>Satış Temsilcisi</li>
+          <li>Ar-Ge Mühendisi</li>
+          <li>Kalite Kontrol Uzmanı</li>
+          <li>Saha Uygulamaları Teknisyeni</li>
+        </ul>
+
+        <h3>Eğitim ve Gelişim Desteği</h3>
+        <p>Çalışanlarımıza sunduğumuz gelişim imkanları:</p>
+        
+        <ul>
+          <li>Sürekli eğitim programları</li>
+          <li>Konferans ve seminer katılımı</li>
+          <li>Yurt dışı eğitim fırsatları</li>
+          <li>Mentörlük programları</li>
+        </ul>
+
+        <p>Kariyer hedeflerinizi gerçekleştirmek için bizimle iletişime geçin. Birlikte büyüyelim!</p>
+      `
+    },
+    'namad-teknoloji-haberleri': {
+      title: 'NAMAD Teknoloji Haberleri',
+      excerpt: 'Nano-teknoloji destekli kaynak çözümlerinde son gelişmeler ve yenilikçi ürün lansmanları.',
+      image: 'https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=800',
+      date: '15 Aralık 2024',
+      author: 'Ar-Ge Ekibi',
+      category: 'Teknoloji',
+      readTime: '6 dk',
+      content: `
+        <p>NAMAD teknolojilerinde yaşanan son gelişmeler, kaynak sektöründe yeni standartlar belirliyor. Nano-teknoloji destekli çözümlerimizle sektörde öncü olmaya devam ediyoruz.</p>
+
+        <h3>Nano-teknoloji Gelişmeleri</h3>
+        <p>Son dönemde gerçekleştirdiğimiz Ar-Ge çalışmaları:</p>
+        
+        <ul>
+          <li><strong>Nano-parçacık Dağılımı:</strong> Homojen dağılım teknolojisinde %40 iyileştirme</li>
+          <li><strong>Matris Yapı Optimizasyonu:</strong> Yeni kristal yapı formülasyonları</li>
+          <li><strong>Seyreltme Oranı Azaltma:</strong> %25 daha düşük seyreltme oranları</li>
+          <li><strong>Termal Stabilite:</strong> Yüksek sıcaklık dayanımında artış</li>
+        </ul>
+
+        <h3>Yeni Ürün Lansmanları</h3>
+        <p>2024 yılında piyasaya sunduğumuz yenilikçi ürünler:</p>
+        
+        <ul>
+          <li>NAWEL Tungsten Carbide WC 75 - En yüksek sertlik</li>
+          <li>NAWEL Heat Resistant Plus - Gelişmiş sıcaklık direnci</li>
+          <li>NAWEL Eco Series - Çevre dostu formülasyonlar</li>
+          <li>NAWEL Smart Flux - Akıllı flux teknolojisi</li>
+        </ul>
+
+        <h3>Gelecek Projeler</h3>
+        <p>2025 yılında hayata geçireceğimiz projeler:</p>
+        
+        <ul>
+          <li>AI destekli parametre optimizasyonu</li>
+          <li>IoT entegreli kaynak takip sistemi</li>
+          <li>Sürdürülebilir üretim teknolojileri</li>
+          <li>Dijital eğitim platformu</li>
+        </ul>
+
+        <h3>Sektörel Etki</h3>
+        <p>Teknolojik gelişmelerimizin sektöre etkisi:</p>
+        
+        <ul>
+          <li>%300'e varan ekipman ömrü artışı</li>
+          <li>%50 maliyet tasarrufu</li>
+          <li>%40 daha hızlı uygulama</li>
+          <li>%60 daha az bakım gereksinimi</li>
+        </ul>
+
+        <p>Teknolojik yeniliklerimizle sektörde fark yaratmaya devam ediyoruz. Gelişmelerimizi takip etmek için haberler sayfamızı ziyaret edin.</p>
+      `
+    },
     'yeni-tungsten-carbide-serisi': {
       title: 'Yeni NAWEL Tungsten Carbide Serisi Tanıtıldı',
       excerpt: 'Ekstra yüksek aşınma direnci için geliştirilen yeni tungsten carbide formülasyonları piyasaya sunuldu.',

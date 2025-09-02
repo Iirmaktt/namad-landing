@@ -59,6 +59,9 @@ export async function GET() {
   ];
 
   const newsPages = [
+    '/haberler/egitim-yatirim-gerekliligi',
+    '/haberler/kariyer-gelistim-projeleri',
+    '/haberler/namad-teknoloji-haberleri',
     '/haberler/yeni-tungsten-carbide-serisi',
     '/haberler/cimento-sektoru-cozumleri',
     '/haberler/fcaw-akademi-egitim-programi',

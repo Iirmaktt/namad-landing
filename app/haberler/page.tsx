@@ -16,6 +16,39 @@ export default function HaberlerPage() {
 
   const news = [
     {
+      slug: 'egitim-yatirim-gerekliligi',
+      title: 'Neden Eğitim İçin Mali Harcama Yapmalıyız?',
+      excerpt: 'Kaynak teknolojilerinde eğitim yatırımının uzun vadeli getirisi ve işletmelere sağladığı avantajlar.',
+      content: 'Kaynak teknolojilerinde eğitim yatırımı, işletmelerin uzun vadeli başarısı için kritik öneme sahiptir...',
+      image: 'https://images.pexels.com/photos/5691660/pexels-photo-5691660.jpeg?auto=compress&cs=tinysrgb&w=600',
+      date: '20 Aralık 2024',
+      author: 'Eğitim Koordinatörü',
+      category: 'Eğitim',
+      readTime: '5 dk'
+    },
+    {
+      slug: 'kariyer-gelistim-projeleri',
+      title: 'İş ve Kariyer Gelişimi İçin Yeni Projeler',
+      excerpt: 'Kaynak sektöründe kariyer gelişimi ve iş fırsatları için yenilikçi projeler ve eğitim programları.',
+      content: 'NanoWearTech Türkiye olarak, çalışanlarımızın ve sektör profesyonellerinin kariyer gelişimi için yeni projeler başlatıyoruz...',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600',
+      date: '18 Aralık 2024',
+      author: 'İnsan Kaynakları',
+      category: 'Kariyer',
+      readTime: '4 dk'
+    },
+    {
+      slug: 'namad-teknoloji-haberleri',
+      title: 'NAMAD Teknoloji Haberleri',
+      excerpt: 'Nano-teknoloji destekli kaynak çözümlerinde son gelişmeler ve yenilikçi ürün lansmanları.',
+      content: 'NAMAD teknolojilerinde yaşanan son gelişmeler, kaynak sektöründe yeni standartlar belirliyor...',
+      image: 'https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=600',
+      date: '15 Aralık 2024',
+      author: 'Ar-Ge Ekibi',
+      category: 'Teknoloji',
+      readTime: '6 dk'
+    },
+    {
       slug: 'yeni-tungsten-carbide-serisi',
       title: 'Yeni NAWEL Tungsten Carbide Serisi Tanıtıldı',
       excerpt: 'Ekstra yüksek aşınma direnci için geliştirilen yeni tungsten carbide formülasyonları piyasaya sunuldu.',

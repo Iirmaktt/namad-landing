@@ -16,28 +16,28 @@ export function NewsPreview() {
 
   const news = [
     {
-      title: 'Yeni NAWEL Tungsten Carbide Serisi Tanıtıldı',
-      excerpt: 'Ekstra yüksek aşınma direnci için geliştirilen yeni tungsten carbide formülasyonları.',
-      image: 'https://images.pexels.com/photos/162553/keys-workshop-mechanic-tools-162553.jpeg?auto=compress&cs=tinysrgb&w=400',
-      date: '15 Aralık 2024',
-      category: 'Ürün Lansmanı',
-      href: '/haberler/yeni-tungsten-carbide-serisi' as Route
-    },
-    {
-      title: 'Çimento Sektörü İçin Özel Çözümler',
-      excerpt: 'Yüksek sıcaklık ve aşınma koşulları için optimize edilmiş hardfacing uygulamaları.',
-      image: 'https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=400',
-      date: '8 Aralık 2024',
-      category: 'Sektör Haberi',
-      href: '/haberler/cimento-sektoru-cozumleri' as Route
-    },
-    {
-      title: 'FCAW Akademi Ücretsiz Eğitim Programı',
-      excerpt: 'Toz dolgulu tel kaynak tekniklerini öğrenen uzmanlar için sertifikalı eğitim.',
+      title: 'Neden Eğitim İçin Mali Harcama Yapmalıyız?',
+      excerpt: 'Kaynak teknolojilerinde eğitim yatırımının uzun vadeli getirisi ve işletmelere sağladığı avantajlar.',
       image: 'https://images.pexels.com/photos/5691660/pexels-photo-5691660.jpeg?auto=compress&cs=tinysrgb&w=400',
-      date: '1 Aralık 2024',
+      date: '20 Aralık 2024',
       category: 'Eğitim',
-      href: '/haberler/fcaw-akademi-egitim-programi' as Route
+      href: '/haberler/egitim-yatirim-gerekliligi' as Route
+    },
+    {
+      title: 'İş ve Kariyer Gelişimi İçin Yeni Projeler',
+      excerpt: 'Kaynak sektöründe kariyer gelişimi ve iş fırsatları için yenilikçi projeler ve eğitim programları.',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
+      date: '18 Aralık 2024',
+      category: 'Kariyer',
+      href: '/haberler/kariyer-gelistim-projeleri' as Route
+    },
+    {
+      title: 'NAMAD Teknoloji Haberleri',
+      excerpt: 'Nano-teknoloji destekli kaynak çözümlerinde son gelişmeler ve yenilikçi ürün lansmanları.',
+      image: 'https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=400',
+      date: '15 Aralık 2024',
+      category: 'Teknoloji',
+      href: '/haberler/namad-teknoloji-haberleri' as Route
     }
   ];
 
