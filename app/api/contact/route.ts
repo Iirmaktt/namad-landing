@@ -5,9 +5,9 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     
     // Basic validation
-    const { name, email, subject, message, requestType, acceptKvkk } = body;
+    const { name, email, phone, subject, message, requestType, acceptKvkk } = body;
     
-    if (!name || !email || !subject || !message || !acceptKvkk) {
+    if (!name || !email || !phone || !subject || !message || !acceptKvkk) {
       return NextResponse.json(
         { error: 'Gerekli alanlar eksik' },
         { status: 400 }
@@ -23,11 +23,20 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Phone validation
+    const phoneRegex = /^[\+]?[0-9\s\-\(\)]{10,}$/;
+    if (!phoneRegex.test(phone)) {
+      return NextResponse.json(
+        { error: 'Geçersiz telefon numarası' },
+        { status: 400 }
+      );
+    }
     // Here you would typically send the email
     // For now, we'll just log it and return success
     console.log('Contact form submission:', {
       name,
       email,
+      phone,
       subject,
       message,
       requestType,

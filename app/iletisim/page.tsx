@@ -178,18 +178,6 @@ export default function ContactPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="company">Şirket</Label>
-                      <Input
-                        id="company"
-                        placeholder="Şirket adınız"
-                        value={formData.company}
-                        onChange={(e) => handleInputChange('company', e.target.value)}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
                       <Label htmlFor="email">E-posta *</Label>
                       <Input
                         id="email"
@@ -200,13 +188,27 @@ export default function ContactPage() {
                         required
                       />
                     </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Telefon</Label>
+                      <Label htmlFor="phone">Telefon Numarası *</Label>
                       <Input
                         id="phone"
+                        type="tel"
                         placeholder="+90 532 123 45 67"
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
+                        required
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="company">Şirket</Label>
+                      <Input
+                        id="company"
+                        placeholder="Şirket adınız"
+                        value={formData.company}
+                        onChange={(e) => handleInputChange('company', e.target.value)}
                       />
                     </div>
                   </div>
@@ -240,15 +242,22 @@ export default function ContactPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Mesaj *</Label>
+                    <Label htmlFor="message">Mesajınız *</Label>
                     <Textarea
                       id="message"
-                      placeholder="Detaylı mesajınızı yazın..."
+                      placeholder="Lütfen ihtiyacınızı, uygulamanızı ve teknik gereksinimlerinizi detaylı olarak açıklayın..."
                       rows={6}
                       value={formData.message}
                       onChange={(e) => handleInputChange('message', e.target.value)}
                       required
                     />
+                    <p className="text-xs text-gray-500">
+                      Daha hızlı ve doğru yanıt alabilmek için lütfen aşağıdaki bilgileri ekleyin:
+                      <br />• Uygulama alanı ve çalışma koşulları
+                      <br />• Mevcut kullandığınız ürünler (varsa)
+                      <br />• Beklenen performans hedefleri
+                      <br />• Yaklaşık ihtiyaç miktarı
+                    </p>
                   </div>
 
                   <div className="flex items-center space-x-2">
@@ -264,6 +273,22 @@ export default function ContactPage() {
                     </Label>
                   </div>
 
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-blue-800 mb-2">Hızlı İletişim</h4>
+                    <p className="text-blue-700 text-sm mb-3">
+                      Acil durumlar için doğrudan arayabilir veya WhatsApp üzerinden mesaj gönderebilirsiniz.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-2">
+                      <Button type="button" variant="outline" size="sm" className="border-blue-300 text-blue-700 hover:bg-blue-100">
+                        <Phone className="h-4 w-4 mr-2" />
+                        +90 532 123 45 67
+                      </Button>
+                      <Button type="button" variant="outline" size="sm" className="border-blue-300 text-blue-700 hover:bg-blue-100">
+                        <MessageCircle className="h-4 w-4 mr-2" />
+                        WhatsApp
+                      </Button>
+                    </div>
+                  </div>
                   <Button type="submit" size="lg" className="w-full md:w-auto">
                     <Send className="h-4 w-4 mr-2" />
                     Mesaj Gönder
