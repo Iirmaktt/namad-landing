@@ -2,27 +2,23 @@
   "navigation": {
     "home": "Home",
     "products": "Products",
-    "plates": "Hardfacing Plates",
-    "electrodes": "Tubular Electrodes",
+    "guides": "Guides",
     "services": "Services",
-    "consulting": "Consulting",
-    "welding": "Welding Services",
-    "academy": "Academy",
+    "academy": "NAMAD Academy",
     "sectors": "Sectors",
     "certificates": "Certificates",
-    "downloads": "Download Center",
     "news": "News",
-    "dealers": "Where to Buy",
+    "dealers": "Representatives",
     "about": "About Us",
     "contact": "Contact",
     "career": "Career"
   },
   "hero": {
-    "title": "Wear-Resistant Welding Solutions",
-    "subtitle": "In Turkey, Close to You",
-    "description": "Multiply equipment lifespan with flux-cored wire (FCAW) and hardfacing plates.",
+    "title": "NAMAD Advanced Nano-Process Materials",
+    "subtitle": "Production-Focused, Wear-Resistant Solutions",
+    "description": "Guarantee: Originality, Quality and Price. Multiply equipment lifespan with flux-cored wire (FCAW) and hardfacing plates.",
     "getQuote": "Get Quote",
-    "expertConsult": "Expert Consultation"
+    "expertConsult": "Contact Sales Team"
   },
   "independence": {
     "short": "This website and NanoWearTech Turkey operating in Turkey are not affiliated with the Iranian corporate structure at namadnanotech.com.",

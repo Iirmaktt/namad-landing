@@ -14,24 +14,24 @@ export function ProductShowcase() {
 
   const products = [
     {
-      icon: Zap,
-      title: 'Cored Wire (FCAW)',
-      description: 'NAWEL Abrasion, Tool, Corrosion, Cast, Buildup ve Tungsten Carbide serisi',
-      href: '/urunler' as Route,
+      icon: Shield,
+      title: 'Aşınmaya Dayanıklı Plakalar',
+      description: 'Ultrahard ve Ultralight serisi hardfacing plakaları',
+      href: '/urunler/plakalar' as Route,
       gradient: 'from-blue-500 to-blue-600'
     },
     {
-      icon: Shield,
-      title: 'Aşınma Plakaları',
-      description: 'Ultrahard ve Ultralight serisi hardfacing plakaları',
-      href: '/plakalar' as Route,
+      icon: Zap,
+      title: 'Toz Dolgulu Kaynak Telleri (FCAW)',
+      description: 'NAWEL Abrasion, Tool, Corrosion, Cast, Buildup ve Tungsten Carbide serisi',
+      href: '/urunler/flux-cored-teller' as Route,
       gradient: 'from-green-500 to-green-600'
     },
     {
       icon: Wrench,
-      title: 'Tubular Elektrotlar',
+      title: 'Toz Dolgulu El Elektrotları',
       description: 'Elle kaynak için özel formülasyonlu toz dolgulu elektrotlar',
-      href: '/elektrotlar' as Route,
+      href: '/urunler/tubular-elektrotlar' as Route,
       gradient: 'from-orange-500 to-orange-600'
     }
   ];

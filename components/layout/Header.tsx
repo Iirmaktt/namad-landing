@@ -18,14 +18,13 @@ export function Header() {
 
   const navigationItems = [
     { href: '/urunler' as Route, label: t('navigation.products') },
-    { href: '/plakalar' as Route, label: t('navigation.plates') },
-    { href: '/elektrotlar' as Route, label: t('navigation.electrodes') },
+    { href: '/rehberler' as Route, label: t('navigation.guides') },
     { href: '/hizmetler' as Route, label: t('navigation.services') },
     { href: '/sektorler' as Route, label: t('navigation.sectors') },
     { href: '/sertifikalar' as Route, label: t('navigation.certificates') },
-    { href: '/indir' as Route, label: t('navigation.downloads') },
+    { href: '/temsilcilikler' as Route, label: t('navigation.dealers') },
     { href: '/haberler' as Route, label: t('navigation.news') },
-    { href: '/nereden-alinir' as Route, label: t('navigation.dealers') },
+    { href: '/akademi' as Route, label: t('navigation.academy') },
     { href: '/hakkimizda' as Route, label: t('navigation.about') },
     { href: '/iletisim' as Route, label: t('navigation.contact') },
   ];

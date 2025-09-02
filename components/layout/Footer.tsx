@@ -30,11 +30,10 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Ürünler</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href={"/urunler/asinma" as Route} className="hover:text-blue-400 transition-colors">NAWEL Abrasion</Link></li>
-              <li><Link href={"/urunler/takim-celigi" as Route} className="hover:text-blue-400 transition-colors">NAWEL Tool</Link></li>
-              <li><Link href={"/urunler/korozyon" as Route} className="hover:text-blue-400 transition-colors">NAWEL Corrosion</Link></li>
-              <li><Link href={"/plakalar" as Route} className="hover:text-blue-400 transition-colors">Aşınma Plakaları</Link></li>
-              <li><Link href={"/elektrotlar" as Route} className="hover:text-blue-400 transition-colors">Tubular Elektrotlar</Link></li>
+              <li><Link href={"/urunler/plakalar" as Route} className="hover:text-blue-400 transition-colors">Aşınma Plakaları</Link></li>
+              <li><Link href={"/urunler/flux-cored-teller" as Route} className="hover:text-blue-400 transition-colors">Toz Dolgulu Teller</Link></li>
+              <li><Link href={"/urunler/tubular-elektrotlar" as Route} className="hover:text-blue-400 transition-colors">Tubular Elektrotlar</Link></li>
+              <li><Link href={"/rehberler" as Route} className="hover:text-blue-400 transition-colors">Rehberler</Link></li>
             </ul>
           </div>
 
@@ -43,8 +42,9 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href={"/hizmetler/danismanlik" as Route} className="hover:text-blue-400 transition-colors">Teknik Danışmanlık</Link></li>
               <li><Link href={"/hizmetler/kaynak" as Route} className="hover:text-blue-400 transition-colors">Kaynak Hizmetleri</Link></li>
-              <li><Link href={"/hizmetler/akademi" as Route} className="hover:text-blue-400 transition-colors">FCAW Akademi</Link></li>
-              <li><Link href={"/indir" as Route} className="hover:text-blue-400 transition-colors">İndirme Merkezi</Link></li>
+              <li><Link href={"/akademi" as Route} className="hover:text-blue-400 transition-colors">NAMAD Akademi</Link></li>
+              <li><Link href={"/sektorler" as Route} className="hover:text-blue-400 transition-colors">Sektörler</Link></li>
+              <li><Link href={"/temsilcilikler" as Route} className="hover:text-blue-400 transition-colors">Temsilcilikler</Link></li>
             </ul>
           </div>
 

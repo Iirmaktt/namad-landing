@@ -2,27 +2,23 @@
   "navigation": {
     "home": "Anasayfa",
     "products": "Ürünler",
-    "plates": "Aşınma Plakaları",
-    "electrodes": "Tubular Elektrotlar",
+    "guides": "Rehberler",
     "services": "Hizmetler",
-    "consulting": "Danışmanlık",
-    "welding": "Kaynak Hizmetleri",
-    "academy": "Akademi",
+    "academy": "NAMAD Akademi",
     "sectors": "Sektörler",
     "certificates": "Sertifikalar",
-    "downloads": "İndirme Merkezi",
     "news": "Haberler",
-    "dealers": "Nereden Alınır",
+    "dealers": "Temsilcilikler",
     "about": "Hakkımızda",
     "contact": "İletişim",
     "career": "Kariyer"
   },
   "hero": {
-    "title": "Aşınmaya Dayanıklı Kaynak Çözümleri",
-    "subtitle": "Türkiye'de, Size Yakın",
-    "description": "Toz dolgulu tel (FCAW) ve hardfacing plakalarıyla ekipman ömrünü katlayın.",
+    "title": "NAMAD Gelişmiş Nanosüreçli Malzemeler",
+    "subtitle": "Üretim Odaklı, Aşınmaya Dayanıklı Çözümler",
+    "description": "Garanti: Orijinallik, Kalite ve Fiyat. Toz dolgulu tel (FCAW) ve hardfacing plakalarıyla ekipman ömrünü katlayın.",
     "getQuote": "Teklif Al",
-    "expertConsult": "Uzmanla Görüş"
+    "expertConsult": "Satış Ekibiyle İletişime Geçin"
   },
   "independence": {
     "short": "Bu web sitesi ve Türkiye'de faaliyet gösteren NanoWearTech Türkiye, İran'daki namadnanotech.com kurumsal yapısıyla bağlantılı değildir.",
